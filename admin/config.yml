@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: mcfredrick/goodgentlefolk
+  branch: main
+  auth_type: pkce
+  app_id: REPLACE_WITH_YOUR_CLIENT_ID
+
+media_folder: "images/uploads"
+public_folder: "/goodgentlefolk/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Content", name: "body", widget: "markdown" }
