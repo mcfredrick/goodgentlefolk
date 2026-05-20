@@ -1,12 +1,9 @@
 backend:
-  name: github
-  repo: mcfredrick/goodgentlefolk
+  name: git-gateway
   branch: main
-  auth_type: pkce
-  app_id: Ov23liJjjLKjoviO1uVX
 
 media_folder: "images/uploads"
-public_folder: "/goodgentlefolk/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "pages"
