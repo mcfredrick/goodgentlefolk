@@ -1,6 +1,6 @@
 ---
-layout: home
 title: Welcome
+layout: home
 ---
 
-Welcome to Good Gentle Folk.
+Welcome to Good Gentlefolk Studio
